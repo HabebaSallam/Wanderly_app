@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 
 class StartScreen extends StatelessWidget {
 
-  const StartScreen({super.key, required this.onThemeToggle});
+  const StartScreen({super.key, required this.onThemeToggle, required String name});
 
   final VoidCallback onThemeToggle;
 
@@ -70,7 +70,7 @@ class StartScreen extends StatelessWidget {
 
               onPressed: () {
 
-                context.push('/destinations');
+                context.push('/signup');
 
               },
 

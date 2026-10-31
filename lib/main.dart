@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lab2_mobileprogramming/screens/signup_screen.dart';
 
 import 'screens/start_screen.dart';
 
@@ -71,7 +72,7 @@ class _WanderlyAppState extends State<WanderlyApp> {
 
             path: '/',
 
-            builder: (context, state) => StartScreen(onThemeToggle: _toggleTheme),
+            builder: (context, state) => StartScreen(onThemeToggle: _toggleTheme, name: '',),
 
           ),
 
@@ -80,6 +81,13 @@ class _WanderlyAppState extends State<WanderlyApp> {
             path: '/destinations',
 
             builder: (context, state) => const DestinationsScreen(),
+
+          ),
+
+          GoRoute(
+            path: '/signup',
+
+            builder: (context, state) => const SignUpScreen(),
 
           ),
 
